@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pudding.Festival</title>
+    <link rel="stylesheet" href="Registration.css">
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="Images/logo3.png" class="logo">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Event.html">Event</a></li>
+                <li><a href="Registration.html">Registration</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="regist">
+        <section class="container">
+            <header>Registration Form</header>
+            <form action="#" class="form">
+                <div class="input-box">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Enter full name" required/>
+                </div>
+    
+                <div class="input-box">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="Enter email address" required/>
+                </div>
+
+                <div class="column">
+                    <div class="input-box">
+                        <label>Phone Number</label>
+                        <input type="number" placeholder="Enter phone number" required/>
+                    </div>
+    
+                    <div class="input-box">
+                        <label>Birth Date</label>
+                        <input type="date" placeholder="Enter birth date" required/>
+                    </div>
+                </div>
+
+                <div class="gender-box">
+                    <h3>Gender</h3>
+                    <div class="gender-option">
+                        <div class="gender">
+                            <input type="radio" id="check-male" name="gender" checked>
+                            <label for="check-male">Male</label>
+                        </div>
+
+                        <div class="gender">
+                            <input type="radio" id="check-female" name="gender">
+                            <label for="check-female">Female</label>
+                        </div>
+
+                        <div class="gender">
+                            <input type="radio" id="check-other" name="gender">
+                            <label for="check-other">Prefer not to say</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-box event">
+                    <label>Choose Event</label>
+                    <!-- <input type="text" placeholder="Choose the event you want to attend" required/> -->
+                    <div class="column">
+                        <div class="select-box">
+                            <select>
+                              <option hidden>Event</option>  
+                              <option>Opening Day</option>  
+                              <option>Tech Expo</option>  
+                              <option>Company Presentation</option>  
+                              <option>Discussion</option>  
+                              <option>Networking Sessions</option>
+                              <option>Workshops</option>  
+
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <button>Submit</button>
+            </form>
+        
+        
+        
+        </section>
+    </div>
+</body>
+</html>

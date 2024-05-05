@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pudding Festival</title>
+    <link rel="stylesheet" href="Event.css">
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="logo3.png" class="logo">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Event.html">Event</a></li>
+                <li><a href="Registration.html">Registration</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        
+        <div class="timeline">
+            <div class="container left-container">
+                <img src="Images/bulet.png">
+                <div class="text-box">
+                    <h2>Opening Day</h2>
+                    <small>6 Mei 2024 - 09.00 WIB</small>
+                    <p>Sambutan dari para penyelenggara event dan pemimpin dari setiap perusahaan teknologi Indonesia.</p>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+
+            <div class="container right-container">
+                <img src="Images/bulet.png">
+                <div class="text-box">
+                    <h2>Tech Expo</h2>
+                    <small>6 Mei 2024 - 11.00 WIB</small>
+                    <p>Perusahaan teknologi Indonesia memamerkan produk dan layanan terbaru mereka melalui ruang virtual yang disediakan.</p>
+                    <span class="right-container-arrow"></span>
+                </div>
+            </div>
+
+            <div class="container left-container">
+                <img src="Images/bulet.png">
+                <div class="text-box">
+                    <h2>Company Presentation</h2>
+                    <small>7 Mei 2024 - 09.00 WIB</small>
+                    <p>Presentasi yang dilakukan oleh perusahaan teknologi Indonesia. Mereka akan memperkenalkan produk lebih detail, strategi bisnis, atau pencapaian baru, melalui ruang virtual.</p>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+
+            <div class="container right-container">
+                <img src="Images/bulet.png">
+                <div class="text-box">
+                    <h2>Discussion</h2>
+                    <small>7 Mei 2024 - 10.30 WIB</small>
+                    <p>Diskusi antara pemimpin perusahaan dengan peserta mengenai tren terbaru dan isu-isu penting dalam dunia teknologi.</p>
+                    <span class="right-container-arrow"></span>
+                </div>
+            </div>
+
+            <div class="container left-container">
+                <img src="Images/bulet.png">
+                <div class="text-box">
+                    <h2>Networking Sessions</h2>
+                    <small>7 Mei 2024 - 12.00 WIB</small>
+                    <p>Peserta dapat berinteraksi satu sama lain untuk berbagi pengalaman, bertukar ide, dan membangun koneksi baru dalam duni teknologi melalui ruang virtual yang disediakan.</p>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+
+            <div class="container right-container">
+                <img src="Images/bulet.png">
+                <div class="text-box">
+                    <h2>Workshops</h2>
+                    <small>8 Mei 2024 - 09.00 WIB</small>
+                    <p>Sesi-sesi praktis yang memungkinkan peserta untuk memperdalam pengethauan mengenai teknologi tertentu secara virtual.</p>
+                    <span class="right-container-arrow"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-wrap">
+            <img src="Images2/back.png" id="backBtn">
+            <div class="gallery">
+                <!-- <h2>Pembicara PuddingFest</h2> -->
+                <div>
+                    <span><img src="Images2/image-1.png"></span>
+                    <span><img src="Images2/image-3.png"></span>
+                    <span><img src="Images2/image-5.png"></span>
+                </div>
+    
+                <div>
+                    <span><img src="Images2/image-2.png"></span>
+                    <span><img src="Images2/image-4.png"></span>
+                    <span><img src="Images2/image-6.png"></span>
+                </div>
+            </div>
+            <img src="Images2/next.png" id="nextBtn">
+        </div>
+    </div>
+
+    <script>
+        let scrollContainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+
+        scrollContainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollContainer.scrollLeft += evt.deltaY;
+            scrollContainer.style.scrollBehavior = "auto";
+        });
+
+        nextBtn.addEventListener("click", () =>{
+            scrollContainer.style.scrollBehavior = "smooth";
+            scrollContainer.scrollLeft += 900;
+        });
+
+        backBtn.addEventListener("click", () =>{
+            scrollContainer.style.scrollBehavior = "smooth";
+            scrollContainer.scrollLeft -= 900;
+        });
+
+    </script>
+</body>
+</html>
